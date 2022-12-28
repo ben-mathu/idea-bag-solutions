@@ -1,6 +1,5 @@
 import re
 import os
-import beepy
 
 class morse_code_maker:
   """
@@ -77,13 +76,9 @@ class morse_code_maker:
 def make_beep_sounds(morse_code: str):
   for item in morse_code:
     if item == '·':
-      beepy.beep('ping')
-      # os.system('beep -f 1500')
+      print(end='\007')
     elif item == '−':
-      beepy.beep('ping')
-      beepy.beep('ping')
-      beepy.beep('ping')
-      # os.system('beep -f 1500 -l 400')
+      print(end='\007')
 
 def main():
   menu_options = 'Choose option:\n 0. Exit\n 1. Enter Text to Convert to Morse Code'
@@ -101,6 +96,7 @@ def main():
       make_beep_sounds(morse_code_str)
             
       print(f'Morse Code: {morse_code_str}\n')
+  print('Bye!')
   
 if __name__ == '__main__':
   main()
