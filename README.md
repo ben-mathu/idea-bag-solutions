@@ -10,3 +10,15 @@ specifically for program run in this project) Run:
 ```bash
 export PYTHONPATH=/path/to/parent/directory
 ```
+
+## List of Completed Idea Bag Problems
+
+- [x] city distance
+- [x] fatorial
+- [x] tax calculation
+- [x] half string
+- [x] morse code maker
+- [x] palindrome checker
+- [x] rss creator
+- [x] word counter
+- [x] FizzBuzz
