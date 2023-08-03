@@ -1,0 +1,139 @@
+{
+  "T": 4,
+  "testCases": [
+    {
+      "N": 4,
+      "dependencyLists": [
+        {
+          "D": "2",
+          "libraryName": "A",
+          "libraryDependencies": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "D": "1",
+          "libraryName": "B",
+          "libraryDependencies": [
+            "D"
+          ]
+        },
+        {
+          "D": "1",
+          "libraryName": "C",
+          "libraryDependencies": [
+            "D"
+          ]
+        },
+        {
+          "D": "0",
+          "libraryName": "D",
+          "libraryDependencies": []
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "dependencyLists": [
+        {
+          "D": "2",
+          "libraryName": "new",
+          "libraryDependencies": [
+            "old",
+            "basic"
+          ]
+        },
+        {
+          "D": "0",
+          "libraryName": "old",
+          "libraryDependencies": []
+        },
+        {
+          "D": "2",
+          "libraryName": "better",
+          "libraryDependencies": [
+            "old",
+            "alternative"
+          ]
+        },
+        {
+          "D": "1",
+          "libraryName": "alternative",
+          "libraryDependencies": [
+            "basic"
+          ]
+        },
+        {
+          "D": "0",
+          "libraryName": "basic",
+          "libraryDependencies": []
+        }
+      ]
+    },
+    {
+      "N": 3,
+      "dependencyLists": [
+        {
+          "D": "2",
+          "libraryName": "simple",
+          "libraryDependencies": [
+            "number",
+            "integer"
+          ]
+        },
+        {
+          "D": "1",
+          "libraryName": "integer",
+          "libraryDependencies": [
+            "number"
+          ]
+        },
+        {
+          "D": "0",
+          "libraryName": "number",
+          "libraryDependencies": []
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "dependencyLists": [
+        {
+          "D": "2",
+          "libraryName": "a",
+          "libraryDependencies": [
+            "b",
+            "c"
+          ]
+        },
+        {
+          "D": "1",
+          "libraryName": "b",
+          "libraryDependencies": [
+            "d"
+          ]
+        },
+        {
+          "D": "1",
+          "libraryName": "c",
+          "libraryDependencies": [
+            "e"
+          ]
+        },
+        {
+          "D": "1",
+          "libraryName": "d",
+          "libraryDependencies": [
+            "e"
+          ]
+        },
+        {
+          "D": "0",
+          "libraryName": "e",
+          "libraryDependencies": []
+        }
+      ]
+    }
+  ]
+}

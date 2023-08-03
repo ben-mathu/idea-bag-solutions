@@ -1,0 +1,5 @@
+Instance ID: i-031881e59ac8f7279
+AMI ID: ami-052efd3df9dad4825
+Availability Zone: us-east-1a
+Device Name: /dev/sda1
+Volume ID: vol-05d6c4d4db899160e
