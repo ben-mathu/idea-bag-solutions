@@ -1,5 +1,5 @@
 from factorial_finder import FactorialFinder
-from common.menu import MainMenu
+from common.program_menu import MainMenu
 
 class CombinationAndPermutations:
   def find_permutation(self, n: int, r: int) -> int:

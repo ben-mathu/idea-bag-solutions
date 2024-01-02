@@ -14,6 +14,7 @@ class MainMenu:
     print('Choose an option below:')
     for k in self.menu_options:
       print(f'{k}: {self.menu_options[k]}')
+    print()
   
   def set_selected_option(self, selected_option: int) -> None:
     self.selected_option = selected_option

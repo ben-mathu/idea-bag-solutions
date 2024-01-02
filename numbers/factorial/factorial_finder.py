@@ -1,4 +1,4 @@
-from common.menu import MainMenu
+from common.program_menu import MainMenu
 
 class FactorialFinder:
   """
