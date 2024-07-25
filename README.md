@@ -24,3 +24,4 @@ export PYTHONPATH=/path/to/working/directory
 - [x] rss creator
 - [x] word counter
 - [x] FizzBuzz
+- [x] Print PI to the nth decimal place
