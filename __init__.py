@@ -1,1 +1,1 @@
-from common import menu
+from common import program_menu

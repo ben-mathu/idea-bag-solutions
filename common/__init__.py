@@ -1,1 +1,1 @@
-from . import menu
+from . import program_menu
