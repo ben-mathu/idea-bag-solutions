@@ -29,16 +29,15 @@ def main():
 
   while(main_menu.get_selected_option() != 0):
     main_menu.show_options()
-    main_menu.set_selected_option(int(input()))
+    main_menu.set_selected_option(int(input('>> ')))
     
-    print('\nEnter integer:')
     if main_menu.get_selected_option() == 1:
-      val = int(input())
+      val = int(input('Enter an integer: '))
       result = factorial_finder.find_factorial_rec(val)
 
       print(f'The factorial of {val} is {result}')
     elif main_menu.get_selected_option() == 2:
-      val = int(input())
+      val = int(input('Enter an integer: '))
       result = factorial_finder.find_factorial_loop(val)
 
       print(f'The factorial of {val} is {result}')

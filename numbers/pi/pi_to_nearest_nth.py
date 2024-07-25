@@ -5,10 +5,19 @@ class PrintPiToNearestNthDecimal:
   then it prints out PI to nearest nth, number, decimal places
   """
   def __init__(self):
-    self.limit = 1000
+    self.limit = 995
   
   def pi_to_nearest_nth(self, remainder, index, n, pi):
-    if index == n or index >= self.limit:
+    """This function prints pi to the nearest nth decimal places
+    using a redimental approach. 22/7
+
+    Args:
+        remainder (int): remainder
+        index (int): index of loop
+        n (int): number of decimal places
+        pi (str): strin concatenation of pi
+    """
+    if index == n or index > self.limit:
       print('Value at n:', pi)
     else:
       div = int(remainder / 7)
@@ -29,20 +38,15 @@ class PrintPiToNearestNthDecimal:
     
     main_menu = MainMenu(menu_options)
     
-    print('This program print the PI to the nearest nth decimal point.\nThe limit is', self.limit, '.')
-    while main_menu.get_selected_option != 0:
-      main_menu.show_options()
-      main_menu.set_selected_option(int(input()))
-      
-      print('\nEnter a number: ')
-      if main_menu.get_selected_option() == 1:
-        val = int(input())
-        result = self.pi_to_nearest_nth(val)
-        
-        print('PI to', val, 'is:', result)
+    print('This program print the PI to the nearest nth decimal point.\nThe limit of decimal places is {}.\n'.format(self.limit))
     
-    n = int(input('Enter a number n where n is the nth digit of PI:'))
-    pi_printer.pi_to_nearest_nth(22, 0, n, '')
+    while(main_menu.get_selected_option() != 0):
+      main_menu.show_options()
+      main_menu.set_selected_option(int(input('\n>> ')))
+      
+      if main_menu.get_selected_option() == 1:
+        val = int(input('Enter a number: '))
+        self.pi_to_nearest_nth(22, 0, val, '')
 
 if __name__ == '__main__':
   
