@@ -24,4 +24,9 @@ export PYTHONPATH=/path/to/working/directory
 - [x] rss creator
 - [x] word counter
 - [x] FizzBuzz
-- [x] Print PI to the nth decimal place
+- [x] Print PI to the nth decimal place using 22/7
+- [ ] Print PI to the nth decimal place to get a non repeating decimal number
+
+  - Aticles/resources:
+
+    - [Stackoverflow1](https://stackoverflow.com/q/45113790)
