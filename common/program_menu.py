@@ -11,7 +11,7 @@ class MainMenu:
     self.selected_option = 1000
   
   def show_options(self):
-    print('Choose an option below:')
+    print('\nChoose an option below:')
     for k in self.menu_options:
       print(f'{k}: {self.menu_options[k]}')
     print()
