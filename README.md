@@ -30,3 +30,30 @@ export PYTHONPATH=/path/to/working/directory
   - Aticles/resources:
 
     - [Stackoverflow1](https://stackoverflow.com/q/45113790)
+
+## Installable packages
+
+To install a package the package must have a pyproject.toml or setup.py file
+containing all configurations. You can find instructions about package Python
+projects [here](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
+Finally, run these commands:
+
+- Install dependencies:
+
+```shell
+  python -m pip install --upgrade build
+```
+
+- build and create `.tar.gz` file
+
+```shell
+  python -m build
+```
+
+In any case you would like to install the packages in a project, move the `.tar.gz` file to
+you local project then run:
+
+```shell
+  pip install path/to/commons_benatt-0.0.1.tar.gz
+```
