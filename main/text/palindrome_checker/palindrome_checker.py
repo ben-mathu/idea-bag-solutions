@@ -1,31 +1,36 @@
-class PalindromeChecker:
-  def reverse_word(self, word: str) -> str:
+from main.common.program_menu import MainMenu
+
+
+def reverse_word(word: str) -> str:
     reversed_str = ''
-    for i in range(len(word)-1, -1, -1):
-      reversed_str += word[i]
-      
+    for i in range(len(word) - 1, -1, -1):
+        reversed_str += word[i]
+
     return reversed_str
-  
-  def check_if_palindrome(self, word: str) -> bool:
-    if word == self.reverse_word(word):
-      return True
+
+
+def check_if_palindrome(word: str) -> bool:
+    if word == reverse_word(word):
+        return True
     else:
-      return False
-    
+        return False
+
+
 def main():
-  menu_options = 'Choose option:\n 0. Exit\n 1. Enter Text to Check'
-  choosen_option = 1000
-  
-  checker = PalindromeChecker()
-  
-  while(choosen_option != '0'):
-    print(menu_options)
-    choosen_option = input()
-    if (choosen_option == '1'):
-      word = input('Enter text to be checked:\nText: ')
-            
-      print(word + ' is ' + ('' if  checker.check_if_palindrome(word) else 'not ') + 'a palindrome.\n')
-  print('Bye!')
-  
+    options = {
+        0: 'Exit',
+        1: 'Enter Text to Check'
+    }
+    main_menu = MainMenu(options)
+
+    while main_menu.get_selected_option() != 0:
+        main_menu.show_options()
+        main_menu.set_selected_option(int(input()))
+        
+        if main_menu.get_selected_option() == 1:
+            word = input('Enter text to be checked:\nText: ')
+            print(word + ' is ' + ('' if check_if_palindrome(word) else 'not ') + 'a palindrome.\n')
+
+
 if __name__ == '__main__':
-  main()
+    main()
