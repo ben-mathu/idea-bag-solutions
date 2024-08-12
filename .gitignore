@@ -18,7 +18,7 @@ lib/
 lib64/
 parts/
 sdist/
-var/
+var
 wheels/
 pip-wheel-metadata/
 share/python-wheels/
@@ -131,3 +131,4 @@ dmypy.json
 # Temporary directories
 temp/
 /.idea/
+*.db

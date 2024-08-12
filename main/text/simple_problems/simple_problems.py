@@ -1,4 +1,4 @@
-from common.program_menu import MainMenu
+from main.common.program_menu import MainMenu
 
 class SimpleProlems:
   def fizz_buzz(self, n: int) -> None:

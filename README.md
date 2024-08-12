@@ -33,7 +33,10 @@ export PYTHONPATH=/path/to/working/directory
 
 ## Installable packages
 
-To install a package the package must have a pyproject.toml or setup.py file
+Listed below are reusable Python Packages that can be install from a Github
+repository.
+
+An installable package must have a pyproject.toml or setup.py file
 containing all configurations. You can find instructions about package Python
 projects [here](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 
