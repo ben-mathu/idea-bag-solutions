@@ -1,7 +1,8 @@
 # Command Line Application Menu (Interface)
 
 A python module that contains a class to that help manage command line application menu.
-An Example of a commang line menu:
+
+An Example of a command line interface:
 
 ```
     Application to generate the fibonacci sequence
